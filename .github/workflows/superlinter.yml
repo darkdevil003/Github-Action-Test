@@ -1,1 +1,20 @@
+name: super-linter 
 
+on: push
+
+jobs:
+  superlint:
+     name: linmt code base
+     runs-on: ubuntu latest
+     
+     steps:
+       - name: checkout code
+         uses: actions/checkout@v2
+         
+       - name: super-linter
+         uses: github/super-linter@4.9.5
+         env:
+           DEFAULT_BRANCH: MAIN
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     
+  
