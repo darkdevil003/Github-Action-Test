@@ -5,4 +5,4 @@ def welcome();
   
   
   print ("This is a tutorial for github actions")
-welcome ()
+welcome ();
