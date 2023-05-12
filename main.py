@@ -1,6 +1,7 @@
 print ("Hello world")
 
-def welcome();
+
+def welcome():
     print ("welcome to my github")
   
   
