@@ -5,7 +5,7 @@ on: push
 jobs:
   superlint:
      name: linmt code base
-     runs-on: ubuntu latest
+     runs-on: ubuntu-latest
      
      steps:
        - name: checkout code
